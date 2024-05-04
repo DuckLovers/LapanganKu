@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.MainImage{
+    max-width: 100%;
+    height: 35vh;
+    background-repeat: no-repeat;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../image/LapanganBola.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.MainName{
+    text-align: center;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+}
+
+nav {
+    flex: content;
+    background-color: orange;
+    padding: .6rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+nav ul li{
+    margin : .5rem;
+    padding : .5rem;
+    border-style: none;
+    background: none;
+    font-size: 24px;
+    color: white;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .MainName{
+        font-size: 30px;
+    }
+    nav ul{
+        gap: 1rem;
+    }
+    nav ul li{
+        font-size: 16px;
+    }
+}
+
+/* Body */
+
+div .BodySection{
+    display: flexbox;
+    flex-direction: row;
+}
+
+.Card {
+    width: 25%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: var(.5rem);
+    display: block;
+    margin: 2rem;
+    padding: 1rem;
+    float: left;
+}
+
+iframe{
+    align-items: center;
+    align-self: center;
+    margin: 2rem 1rem;
+}
+
+.CardImage{
+    border-radius: var(--itemBorderRadius);
+    overflow: hidden;
+}
+
+.Card img{
+    width:100%;
+    aspect-ratio: 4/3;
+}
+
+div .CardContainer{
+    height: 60px;
+    width: 40px;
+    border-radius: .2rem;
+}
+
+div .CardImageContainer{
+    width: 100%;
+    height: 20px
+}
+
+img .CardImage{
+    height: fit-content;
+    width: fit-content;
+}
+
+div .CardTextContainer{
+    padding: .5rem;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .Card{
+        width: 80%;
+    }
+
+    iframe{
+        width: 100%;
+        align-self: center;
+    }
+
+    div .Youtube{
+        width: 80%;
+        align-self: center;
+    }
+
+    div .BodySection{
+        display:block;
+        align-items: center;
+        align-content: center;
+    }
+}
