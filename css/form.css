@@ -71,6 +71,10 @@ nav ul li a{
 
 /* Body */
 
+.Pemesanan{
+    color: chocolate;
+}
+
 .MainBody{
     height: 350px;
     margin: 2rem;
@@ -83,7 +87,7 @@ nav ul li a{
     font-size: 24px;
 }
 
-.BodyRight {
+#BodyRight {
     font-size: 24px;
 }
 

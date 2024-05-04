@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: white;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.Nota{
+    margin: 1rem 2rem ;
+    background-color: antiquewhite;
+    border-radius: 16px;
+}
+
+.MainImage{
+    max-width: 100%;
+    height: 35vh;
+    background-repeat: no-repeat;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../image/LapanganBola.jpg);
+    border-radius: 16px 16px 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.HeaderText{
+    background-color: orange;
+    padding: .6rem;
+}
+
+.MainName{
+    text-align: center;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+}
+
+.MainBody{
+    margin: 2rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.MainBody P{
+    font-size: 24px;
+}
+
+.SaveToPDF {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    padding: .5rem;
+}
+
+.ButtonContent {
+    display: flex;
+    align-items: center;
+}
+
+.BackButton{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 24px;
+    padding: .2rem;
+}
+
+.SaveToPDF img {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 5px; 
+}
+
+.SaveToPDF span {
+    font-size: 24px; 
+}
+
+@media screen and (max-width: 768px) {
+    .MainName{
+        font-size: 30px;
+    }
+    .HeaderText h1{
+        font-size: 24px;
+    }
+    .MainBody{
+        margin: 1rem;
+    }
+    .MainBody p{
+        font-size: 14px;
+    }
+}

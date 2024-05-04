@@ -57,6 +57,46 @@ nav ul li a{
     color: white;
 }
 
+/* Body */
+
+.List{
+    color: chocolate;
+}
+
+.MainBody{
+    margin: 2rem;
+    align-self: center;
+    align-content: center;
+}
+
+table .ListTable{
+    width: 100%;
+    align-self: center;
+    align-content: center;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    font-size: 24px;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #dddddd;
+}
+
+td a{
+    text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
     .MainName{
         font-size: 30px;
@@ -67,86 +107,10 @@ nav ul li a{
     nav ul li{
         font-size: 16px;
     }
-}
 
-/* Body */
-
-.Beranda{
-    color: chocolate;
-}
-
-
-div .BodySection{
-    display: flexbox;
-    flex-direction: row;
-}
-
-.Card {
-    width: 25%;
-    height: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: var(.5rem);
-    display: block;
-    margin: 2rem;
-    padding: 1rem;
-    float: left;
-}
-
-iframe{
-    align-items: center;
-    align-self: center;
-    margin: 2rem 1rem;
-}
-
-.CardImage{
-    border-radius: var(--itemBorderRadius);
-    overflow: hidden;
-}
-
-.Card img{
-    width:100%;
-    aspect-ratio: 4/3;
-}
-
-div .CardContainer{
-    height: 60px;
-    width: 40px;
-    border-radius: .2rem;
-}
-
-div .CardImageContainer{
-    width: 100%;
-    height: 20px
-}
-
-img .CardImage{
-    height: fit-content;
-    width: fit-content;
-}
-
-div .CardTextContainer{
-    padding: .5rem;
-    
-}
-
-@media screen and (max-width: 768px) {
-    .Card{
-        width: 80%;
-    }
-
-    iframe{
-        width: 100%;
-        align-self: center;
-    }
-
-    div .Youtube{
-        width: 80%;
-        align-self: center;
-    }
-
-    div .BodySection{
-        display:block;
-        align-items: center;
-        align-content: center;
+    th, td {
+        font-size: 12px;
+        padding: 4px;
     }
 }
+
